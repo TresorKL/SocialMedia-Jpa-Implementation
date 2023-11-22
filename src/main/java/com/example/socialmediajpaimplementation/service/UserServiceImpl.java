@@ -25,7 +25,6 @@ public class UserServiceImpl implements UserServiceInterface{
         UserApp user = new UserApp();
         user.setEmail(newUserDTO.getEmail());
         user.setUsername(newUserDTO.getUsername());
-
         return userAppRepo.save(user);
 
     }

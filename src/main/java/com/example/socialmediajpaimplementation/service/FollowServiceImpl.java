@@ -28,7 +28,6 @@ public class FollowServiceImpl implements FollowServiceInterface{
 
         List<UserDTO> followers = new ArrayList<>();
 
-
         for (Follow follow: followList) {
 
             if (Objects.equals(follow.getFollowingId(), user.getId())){
